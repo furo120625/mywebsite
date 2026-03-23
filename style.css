@@ -1,0 +1,74 @@
+body {
+    background: #111;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-family: monospace;
+}
+
+.calculator {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 12px;
+    width: 340px;
+}
+
+.screen {
+    height: 80px;
+    background: #cfd8c3;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+/* ===== ROW 1 ===== */
+.row1 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 40px);
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+/* ===== ROW 2 ===== */
+.row2 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 40px);
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+/* ===== ROW 3 ===== */
+.row3 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 40px);
+    gap: 10px;
+}
+
+/* ===== BUTTON BASE ===== */
+button {
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* ===== COLORS ===== */
+.num {
+    background: white;
+    color: black;
+}
+
+.blue {
+    background: #2b4ea0;
+    color: white;
+}
+
+.silver {
+    background: #dddddf;
+}
+
+button:not(.num):not(.blue):not(.silver) {
+    background: #444;
+    color: white;
+}
