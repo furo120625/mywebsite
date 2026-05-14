@@ -1,95 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casio Layout</title>
+<html>
+    <title> Learning Progress </title>
+    <h1> HTML basics </h1>
+    <body> 
+        <h2> The &lt;body&gt; tag starts the documents' body, it's the container
+        for all the visible content, such as &lt;h1&gt; (adjustable to h2 h3 h4..., defines a large heading) </h2>
+        <p> or a &lt;p&gt; (defines a smaller paragraph like this)</p>
+        <h2>"&amp;lt;" for "<" and "&amp;gt;" for ">"</h2>
+        <h2> The bolow is a HTML page structure: (To make the space not combined, we'll use &lt;pre&gt; tag) </h2>
+        <pre><h2>&lt;pre&gt;
+|____&lt;html&gt;
+|    |__ &lt;head&gt;
+|    |       &lt;title&gt; content &lt;/title>&gt;
+|    |   &lt;/head&gt; 
+|    |
+|    |__&lt;body&gt;
+|    |       |__&lt;h1&gt; This is a heading &lt;/h1&gt;
+|    |       |__&lt;p&gt; This is a para &lt;/p&gt;
+|    |       |
+|    |  &lt;/body&gt;
+|    &lt;/html&gt;
+&lt;/pre&gt;</h2></pre>
+        <h2> To insert a link, use &lt;a href="(link)"  &lt;/a&gt;, adding target="blank" will open it in a new tab. For instane:
+            <a href="https://www.youtube.com/" target="blank"> Link to youtube (new tab) </a>
+            or
+            <a href="https://www.youtube.com/"> Link to youtube (same tab) </a>
+        </h2>
+    
+    <h1> ELEMENTS </h1>
+    <h2> Elements simply are the &lt;tagname&gt; (Content) &lt;/tagname&gt; , just don't forget to close or your content will be deleted.</h2>
 
-    <!-- QUAN TRỌNG: link CSS -->
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-<div class="calculator">
-    <div class="screen"></div>
-
-    <!-- ROW 1 -->
-    <div class="row1">
-        <button class="silver">SHIFT</button>
-        <button class="silver">ALPHA</button>
-        <button class="silver">↑</button>
-        <button class="silver">MENU</button>
-        <button class="silver">ON</button>
-
-        <div></div>
-        <button class="silver">←</button>
-        <button class="silver">↓</button>
-        <button class="silver">→</button>
-        <div></div>
-    </div>
-
-    <!-- ROW 2 -->
-    <div class="row2">
-        <button>OPTN</button>
-        <button>CALC</button>
-        <div></div>
-        <div></div>
-        <button>∫𝑥
-            <span> a to b</span>
-        </button>
-        <button>𝑥</button>
-
-        <button>a/b</button>
-        <button>√</button>
-        <button>𝑥²</button>
-        <button>𝑥^</button>
-        <button>log a(b)</button>
-        <button>ln</button>
-
-        <button>(-)</button>
-        <button>° ' "</button>
-        <button>𝑥⁻¹</button>
-        <button>sin</button>
-        <button>cos</button>
-        <button>tan</button>
-
-        <button>STO</button>
-        <button>ENG</button>
-        <button>(</button>
-        <button>)</button>
-        <button>S↔D</button>
-        <button>M+</button>
-        <div></div>
-    </div>
-
-    <!-- ROW 3 -->
-    <div class="row3">
-        <button class="num">7</button>
-        <button class="num">8</button>
-        <button class="num">9</button>
-        <button class="blue">DEL</button>
-        <button class="blue">AC</button>
-
-        <button class="num">4</button>
-        <button class="num">5</button>
-        <button class="num">6</button>
-        <button>×</button>
-        <button>÷</button>
-
-        <button class="num">1</button>
-        <button class="num">2</button>
-        <button class="num">3</button>
-        <button>+</button>
-        <button>-</button>
-
-        <button class="num">0</button>
-        <button class="num">.</button>
-        <button>x10^𝑥</button>
-        <button>Ans</button>
-        <button>=</button>
-    </div>
-</div>
-
+    <h1> HTML Attributes</h1>
+    <h2> The href, src, width and height, alt, style, lang, title attribute:</h2>
+    <h3> href is for a hyperlink: &lt;a href="https://www.youtube.com" &lt;/a&gt;</h3>
+    <h3> src is used to embed and an image: &lt;img src=""></h3>
 </body>
 </html>
